@@ -1,28 +1,32 @@
 import React from 'react';
 import { Container } from './styles';
 
-import IconReact from '../../../assets/react.svg'
-import IconNode from '../../../assets/nodejs.svg'
 import IconNpc from '../../../assets/npc.svg'
-import TagIcon from '../../../assets/tagIcon.svg'
-import ObjectIcon from '../../../assets/objectIcon.svg'
+import IconJava from '../../../assets/java.png'
+import {Node, ReactIcon } from '../../../components/Icons';
 
 export default function Top() {
-    console.log(IconReact)
   return (
     <Container>
-        <div className='content'>
-            <div className='hello'>
-                <p>Oi, eu sou </p>
-                <span>{"< Matheus Pelucio />"}</span>
+        <main>
+            <div className='hello flex'>
+                <p>Hello world, eu sou </p>
+                <span>{"< Matheus"}</span>
+                <span>{"Pelucio />"}</span>
                 <p>Desenvolvedor Fullstack</p>
             </div>
-            <div className='avatar'>
-                <img src={IconReact} alt='React' />
-                <img src={IconNode} alt='Node' /> 
-                <img src={IconNpc} alt='Perfil' /> 
+            <div className='avatar flex'>
+                <span className='flex'>
+                    <ReactIcon />
+                    <Node /> 
+                    <img src={IconJava} alt='Java' />
+                    <img src={IconNpc} alt='Perfil' />
+                </span> 
             </div> 
-            <div className='about'>
+            
+        </main>
+        {/* <div className='about'>
+            <div>
                 <span>sobre()</span>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer velit turpis, finibus eu condimentum ut, posuere at ipsum. Maecenas vel consequat mauris. Quisque sodales ipsum aliquet aliquam placerat. Proin varius condimentum sapien. Mauris quis elit nibh. Morbi ut facilisis nisl. Duis et leo ut odio rhoncus porta a a dui. Nullam arcu nibh, bibendum in enim sed, ullamcorper feugiat nunc. 
@@ -38,7 +42,8 @@ export default function Top() {
                     <img src={ObjectIcon} alt='Icone objeto' /> 
                 </div>
             </div>
-        </div>
+        </div> */}
+            
     </Container>
   );
 }

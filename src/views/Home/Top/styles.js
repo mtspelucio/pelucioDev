@@ -1,52 +1,89 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    background: #000;
+    background: linear-gradient(to right, var(--black), var(--gray-200));
     width: 100%;
-    padding: 6rem 4rem;
+    height: 100vh;
+    padding: 8rem 4rem;
 
-    .content{
+    .flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main{
+        height: 80vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        row-gap: 5rem;
 
-        p{
-            color: #fff;
-            font-size: 1rem;
-        }
-        span{
-            color: #08f;
-            font-weight: bold;
-            font-size: 2rem;
-        }
-        .hello p{
-            height: 100vh;
-            margin: 1rem 0;
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-        .avatar img{
-            width: 5rem;
-        }
-        .services{
-            display: flex;
+        .hello{
             flex-direction: column;
-            gap: 1rem;
-            div{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: #4f4f4f;
-                width: 18rem;
-                height: 3rem;
-                padding: 1rem;
-                border-radius: .4rem;
-                gap: 1rem;
-                font-family: 'Times New Roman', Times, serif;
-                 
+            align-items: start;
+            padding-left: 8rem;
+
+            p{
+                color: var(--white);
+                font-size: 1.6rem;
+                font-weight: bold;
+                margin: 1.6rem 0;
+                cursor: default;
+            }
+
+            span{
+                color: var(--primary);
+                font-size: 4rem;
+                font-weight: bold;
+                cursor: default;
+            }
+
+            :nth-child(3){
+                margin-left: 4rem;
+            }
+            
+        }
+
+        .avatar{
+            justify-content: start;
+
+            span{
+                position: relative;
+                background: transparent;
+                border: 2px solid var(--gray-200);
+                /* box-shadow: 0 0 20px var(--black); */
+                border-radius: 50%;
+                width: 40rem;
+                height: 40rem;
+
+                svg{
+                    position: absolute;
+                    background: var(--gray-200);
+                    border-radius: 50%;
+                    box-shadow: 0 0 20px var(--black);
+                    padding: 1rem;
+                }
                 img{
-                    width: 1.6rem;
+                    margin: 0;
+                }
+                
+                :nth-child(1){
+                    bottom: 2rem;
+                    left: 2rem;
+
+                }
+                :nth-child(2){
+                    right: -2.5rem;
+
+                }
+                :nth-child(3){
+                    width: 7rem;
+                    position: absolute;
+                    left: -1rem;
+                    top: 8rem;
+                    background: var(--gray-200);
+                    border-radius: 50%;
+                    box-shadow: 0 0 20px var(--black);
+                    padding: 1rem;
                 }
             }
         }
