@@ -108,7 +108,8 @@ export const Container = styled.div`
             }
 
             p{
-                font-size: 1.2rem;
+                font-size: 1.6rem;
+                font-weight: 400;
                 max-width: 80%;
             }
 
