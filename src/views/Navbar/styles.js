@@ -33,9 +33,13 @@ export const Container = styled.div`
         flex: 1;
         gap: 2rem;
 
-        a{
-            text-decoration: none;
-            color: var(--white);            
+        button{
+            background: transparent;
+            border: none;
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: var(--white);    
+            cursor: pointer;        
         }:hover{
             color: var(--green); 
             transition: .4s;

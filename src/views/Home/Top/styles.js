@@ -48,6 +48,12 @@ export const Container = styled.div`
         .avatar{
             justify-content: start;
 
+            /* @media (max-width: 1260px) {
+                .avatar {
+                    display: none;
+                }
+            } */
+
             span{
                 position: relative;
                 background: transparent;
@@ -87,6 +93,8 @@ export const Container = styled.div`
                     padding: 1rem;
                 }
             }
+
+            
         }
     }
 

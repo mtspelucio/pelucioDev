@@ -1,16 +1,38 @@
 import React from 'react';
 import { Container } from './styles';
 
-import { Linkedin, Github, Email } from '../../components/Icons'
+import { Linkedin, Github } from '../../components/Icons'
 
 export default function Navbar() {
+    function goToAbout() {
+        window.scrollTo({
+            top: 700,
+            behavior: "smooth"
+        })
+    }
+
+    function goToSkills() {
+        window.scrollTo({
+            top: 700,
+            behavior: "smooth"
+        })
+    }
+
+    function goToProjects() {
+        window.scrollTo({
+            top: 1350,
+            behavior: "smooth"
+        })
+    }
+
+
   return (
     <Container>
         <p>MATHEUS<span>PELUCIO</span></p>
         <nav className='flex'>
-            <a href='go' target="_blank" rel="noopener noreferrer">Sobre</a>
-            <a href='go' target="_blank" rel="noopener noreferrer">Habilidades</a>
-            <a href='go' target="_blank" rel="noopener noreferrer">Projetos</a>
+            <button onClick={goToAbout} >Sobre</button>
+            <button onClick={goToSkills} >Habilidades</button>
+            <button onClick={goToProjects} >Projetos</button>
         </nav>
         <div className='contacts'>
             <a className='flex' href='https://www.linkedin.com/in/matheus-pelucio/' target="_blank" rel="noopener noreferrer">
@@ -21,12 +43,12 @@ export default function Navbar() {
                 <Github />
                 Github
             </a>
-            <button>
-                <a className='flex' href='go' target="_blank" rel="noopener noreferrer">
+            {/* <button>
+                <a className='flex'  target="_blank" rel="noopener noreferrer">
                     <Email />
                     Entre em contato
                 </a>
-            </button>
+            </button> */}
         </div>
     </Container>
   );
