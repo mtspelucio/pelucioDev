@@ -7,7 +7,7 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        font-family: 'Roboto', sans-serif;
+        
     }
 
     :root{
@@ -16,7 +16,8 @@ const GlobalStyles = createGlobalStyle`
         --gray-200: #2d2d2d;
         --white: #fff;
         --black: #000;
-
+        --shadow: rgba(0, 0, 0, 0.4);
+        --green: #70dd00;
     }
 `;
 

@@ -7,11 +7,11 @@ export default function Navbar() {
   return (
     <Container>
         <p>MATHEUS<span>PELUCIO</span></p>
-        <div className='info flex'>
+        <nav className='flex'>
             <a href='go' target="_blank" rel="noopener noreferrer">Sobre</a>
             <a href='go' target="_blank" rel="noopener noreferrer">Habilidades</a>
             <a href='go' target="_blank" rel="noopener noreferrer">Projetos</a>
-        </div>
+        </nav>
         <div className='contacts'>
             <a className='flex' href='https://www.linkedin.com/in/matheus-pelucio/' target="_blank" rel="noopener noreferrer">
                 <Linkedin />

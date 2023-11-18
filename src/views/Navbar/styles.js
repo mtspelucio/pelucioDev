@@ -9,6 +9,7 @@ export const Container = styled.div`
     background-color: transparent;
     font-size: 1.2rem;
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     top: 0;
 
@@ -28,7 +29,7 @@ export const Container = styled.div`
         }
     }
 
-    .info{
+    nav{
         flex: 1;
         gap: 2rem;
 
@@ -36,7 +37,7 @@ export const Container = styled.div`
             text-decoration: none;
             color: var(--white);            
         }:hover{
-            color: var(--primary); 
+            color: var(--green); 
             transition: .4s;
         }
     }
@@ -54,15 +55,15 @@ export const Container = styled.div`
                 width: 1.6rem;
             }
         }:hover{
-            color: var(--primary);
+            color: var(--green);
             transition: .4s;
         }:hover > svg path{
-            fill: var(--primary);
+            fill: var(--green);
             transition: .4s;
         }
         button{
             position: relative;
-            background: linear-gradient(to top, var(--white), var(--primary));
+            background: linear-gradient(to top, var(--white), var(--green));
             padding: .2rem;
             border: none;
             border-radius: .4rem;

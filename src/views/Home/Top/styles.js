@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
     background: linear-gradient(to right, var(--black), var(--gray-200));
     width: 100%;
-    height: 100vh;
     padding: 8rem 4rem;
+    font-family: 'Roboto', sans-serif;
 
     .flex{
         display: flex;
@@ -13,7 +13,7 @@ export const Container = styled.div`
     }
 
     main{
-        height: 80vh;
+        height: 90vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
 
@@ -31,7 +31,7 @@ export const Container = styled.div`
             }
 
             span{
-                color: var(--primary);
+                color: var(--green);
                 font-size: 4rem;
                 font-weight: bold;
                 cursor: default;
@@ -40,7 +40,9 @@ export const Container = styled.div`
             :nth-child(3){
                 margin-left: 4rem;
             }
-            
+            :nth-child(4){
+                font-size: 2rem;
+            }
         }
 
         .avatar{
@@ -50,7 +52,6 @@ export const Container = styled.div`
                 position: relative;
                 background: transparent;
                 border: 2px solid var(--gray-200);
-                /* box-shadow: 0 0 20px var(--black); */
                 border-radius: 50%;
                 width: 40rem;
                 height: 40rem;
@@ -59,7 +60,7 @@ export const Container = styled.div`
                     position: absolute;
                     background: var(--gray-200);
                     border-radius: 50%;
-                    box-shadow: 0 0 20px var(--black);
+                    box-shadow: 0 0 20px var(--shadow);
                     padding: 1rem;
                 }
                 img{
@@ -82,10 +83,74 @@ export const Container = styled.div`
                     top: 8rem;
                     background: var(--gray-200);
                     border-radius: 50%;
-                    box-shadow: 0 0 20px var(--black);
+                    box-shadow: 0 0 20px var(--shadow);
                     padding: 1rem;
                 }
             }
+        }
+    }
+
+    .about{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        color: var(--white);
+        padding: 0 6rem;
+
+        .aboutText{
+            padding: 2rem;
+
+            span{
+                color: var(--green);
+                font-size: 1.6rem;
+                font-weight: bold;
+                font-family: 'Hepta Slab', serif;
+            }
+
+            p{
+                font-size: 1.2rem;
+                max-width: 80%;
+            }
+
+            :nth-child(1){
+                font-size: 1.6rem;
+                font-weight: bold;
+                margin-bottom: 1.2rem;
+            }
+        }
+
+        .skills{
+            padding: 2rem;
+            align-items: flex-start;
+            justify-content: start;
+            border: 2px solid var(--gray-200);
+            border-radius: .8rem;
+            flex-direction: column;
+            
+            span{
+                color: var(--green);
+                font-size: 1.6rem;
+                font-weight: bold;
+                font-family: 'Hepta Slab', serif;
+            }
+            
+
+            div{
+                flex: 1;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+
+                svg, img{
+                    margin: 0;
+                    width: 4rem;
+                }
+            }
+            
+        }:nth-child(1){
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 1.2rem;
         }
     }
 `;
