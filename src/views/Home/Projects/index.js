@@ -19,8 +19,8 @@ export default function Projects() {
     <Container id='carrousel'>
       <p id='projects'><span>projetos</span>( )</p>
       <div id='slider'>
-        <ProjectItem projectName="API TodoList Java" imageUrl="todoList.png" />
-        <ProjectItem projectName="Landing page - Solução de Engenhario" imageUrl="clio.png" />
+        <ProjectItem url="https://todolist-java-jrkd.onrender.com/swagger-ui/index.html" projectName="API TodoList Java" imageUrl="todoList.png" />
+        <ProjectItem url="https://clio.vercel.app/" projectName="Landing page - Solução de Engenhario" imageUrl="clio.png" />
         <ProjectItem projectName="Em breve" imageUrl="projectExample.png" />
         <ProjectItem projectName="Em breve" imageUrl="projectExample.png" />
         <ProjectItem projectName="Em breve" imageUrl="projectExample.png" />
