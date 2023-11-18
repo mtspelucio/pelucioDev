@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './styles';
 
-import IconNpc from '../../../assets/icons/npc.svg'
+// import IconNpc from '../../../assets/icons/npc.svg'
 import IconJava from '../../../assets/icons/java.png'
 import {Node, ReactIcon, JavascriptIcon, HtmlIcon, CssIcon } from '../../../components/Icons';
 
@@ -20,7 +20,7 @@ export default function Top() {
                     <ReactIcon />
                     <Node /> 
                     <img src={IconJava} alt='Java' />
-                    <img src={IconNpc} alt='Perfil' />
+                    {/* <img src={IconNpc} alt='Perfil' /> */}
                 </span> 
             </div> 
             
