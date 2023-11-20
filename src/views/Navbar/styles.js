@@ -12,6 +12,7 @@ export const Container = styled.div`
     font-family: 'Roboto', sans-serif;
     position: absolute;
     top: 0;
+    left: 0;
 
     .flex {
         display: flex;
@@ -83,4 +84,31 @@ export const Container = styled.div`
         }
         
     } 
+
+    @media (max-width: 1260px) {
+        padding: 1rem 2rem;
+        max-width: 100%;
+
+        P{
+            font-size: 1rem;
+        }
+
+        #navbar{
+            display: none;
+        }
+
+        .contacts{
+            gap: 1rem;
+            
+            a{
+                gap: .2rem;
+                font-size: 1rem;
+                font-weight: 400;
+
+                svg{
+                    width: 1rem;
+                }
+            }            
+        } 
+    }
 `;

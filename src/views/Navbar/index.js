@@ -29,7 +29,7 @@ export default function Navbar() {
   return (
     <Container>
         <p>MATHEUS<span>PELUCIO</span></p>
-        <nav className='flex'>
+        <nav id='navbar' className='flex'>
             <button onClick={goToAbout} >Sobre</button>
             <button onClick={goToSkills} >Habilidades</button>
             <button onClick={goToProjects} >Projetos</button>
