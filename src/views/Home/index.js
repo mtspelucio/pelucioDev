@@ -17,10 +17,10 @@ export default function Home() {
 
   const slideLeft = () => {
     var slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft - 500;
+    slider.scrollLeft = slider.scrollLeft - 350;
   };
   const slideRight = () => {
-    var slider = (document.getElementById("slider").scrollLeft += 500);
+    var slider = (document.getElementById("slider").scrollLeft += 350);
     console.log(slider);
   };
 

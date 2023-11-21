@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     background: linear-gradient(to right, var(--black), var(--gray-200));
     width: 100%;
-    padding: 8rem 4rem;
+    padding: 8rem 0;
     font-family: 'Roboto', sans-serif;
 
     .flex{
@@ -13,6 +13,7 @@ export const Container = styled.div`
     }
 
     main{
+        padding: 0 4rem;
         height: 90vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -97,7 +98,7 @@ export const Container = styled.div`
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
         color: var(--white);
-        padding: 0 6rem;
+        padding: 0 10rem;
 
         .aboutText{
             padding: 2rem;
@@ -160,7 +161,9 @@ export const Container = styled.div`
     #carrousel{
         width: 100%;
         position: relative;
-
+        display: flex;
+        flex-direction: column;
+        padding-top: 4rem;
 
         span{
             color: var(--green);
@@ -175,9 +178,7 @@ export const Container = styled.div`
             font-weight: bold;
             width: 80%;
             color: var(--white);
-            position: absolute;
-            top: 2rem;
-            left: 12rem;
+            margin-left: 8rem;
         }
         
         #slider{
@@ -200,6 +201,7 @@ export const Container = styled.div`
         #chevronRight{
             position: absolute;
             left: 1rem;
+            bottom: .5rem;
             background: var(--shadow);
             border-radius: .4rem;
             height: 21rem;
@@ -216,14 +218,12 @@ export const Container = styled.div`
         }
     }
 
-    @media (max-width: 550px) {
-        padding: 6rem 2rem 4rem 2rem;
+    @media (max-width: 560px) {
+        padding: 6rem 0 4rem 0;
         
         main{
-            display: flex;
-            align-items: start;
-            flex-direction: column;
             height: 40vh;
+            padding: 0;
 
             .hello{
                 padding: 0;
@@ -241,9 +241,7 @@ export const Container = styled.div`
                 }
             }
             .avatar{
-                position: absolute;
-                top: 6rem;
-                right: 1.4rem;
+                justify-content: end;
 
                 span{
                     width: 10rem;
@@ -305,13 +303,14 @@ export const Container = styled.div`
         }
 
         #carrousel{
-            padding-top: 5rem;
-            margin-top: 5rem;
             position: relative;
-            #projects{
-                left: 1rem;
-            }
 
+            #projects{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin: 1rem 0;;
+            }
 
             #slider{
                 gap: 1rem;
@@ -321,7 +320,113 @@ export const Container = styled.div`
             }
             #chevronLeft,
             #chevronRight{
-                top: 5.5rem;
+                top: 4rem;
+                position: absolute;
+                height: 4rem;
+                width: 4rem;
+            }
+        }
+    }
+
+    @media (max-width: 800px){
+        padding: 6rem 0 4rem 0;
+        
+        main{
+            height: 60vh;
+            padding-left: 2rem;
+
+            .hello{
+                padding: 0;
+                p{
+                    font-size: 1.2rem;
+                }
+                span{
+                    font-size: 4rem; 
+                }
+                :nth-child(3){
+                    margin-left: 3rem;
+                }
+                :nth-child(4){
+                    font-size: 1.6rem;
+                }
+            }
+            .avatar{
+                justify-content: end;
+
+                span{
+                    width: 15rem;
+                    height: 15rem;
+
+                    svg{
+                        padding: .4rem;
+                    }
+    
+                    :nth-child(1){
+                        width: 4rem;
+                        height: 4rem;
+                        bottom: 2rem;
+                        left: -1rem;
+                    }
+                    :nth-child(2){
+                        right: -1.6rem;
+                        width: 3.5rem;
+                        height: 3.5rem;
+                    }
+                    :nth-child(3){
+                        padding: .4rem;
+                        width: 4rem;
+                        left: -.8rem;
+                        top: 1rem;;
+                    }
+                }
+
+            }
+        }  
+        
+        .about{
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+
+            .aboutText{
+                padding: 0;
+
+                p{
+                    font-size: 1.2rem;
+                    min-width: 100%;
+                    text-align: justify;
+                }
+
+                :nth-child(1){
+                    font-size: 1.6rem;
+                }
+            }
+            .skills{
+                div{
+                    svg, img{
+                        width: 4rem;
+                        height: 4rem;
+                    }
+                }
+            }
+        }
+
+        #carrousel{
+            position: relative;
+
+            #projects{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin: 1rem 0;;
+            }
+
+            #chevronLeft,
+            #chevronRight{
+                top: 4rem;
+                position: absolute;
+                height: 4rem;
+                width: 4rem;
             }
         }
     }
