@@ -218,116 +218,6 @@ export const Container = styled.div`
         }
     }
 
-    @media (max-width: 560px) {
-        padding: 6rem 0 4rem 0;
-        
-        main{
-            height: 40vh;
-            padding: 0;
-
-            .hello{
-                padding: 0;
-                p{
-                    font-size: 1.2rem;
-                }
-                span{
-                    font-size: 2rem; 
-                }
-                :nth-child(3){
-                    margin-left: 2rem;
-                }
-                :nth-child(4){
-                    font-size: 1.2rem;
-                }
-            }
-            .avatar{
-                justify-content: end;
-
-                span{
-                    width: 10rem;
-                    height: 10rem;
-
-                    svg{
-                        padding: .4rem;
-                    }
-    
-                    :nth-child(1){
-                        width: 3rem;
-                        height: 3rem;
-                        bottom: -1.4rem;
-                        left: 3rem;
-                    }
-                    :nth-child(2){
-                        right: -.4rem;
-                        bottom: 1rem;
-                        width: 2.5rem;
-                        height: 2.5rem;
-                    }
-                    :nth-child(3){
-                        padding: .4rem;
-                        width: 3rem;
-                        top: -.4rem;
-                        left: 6rem;
-                    }
-                }
-
-            }
-        }  
-        
-        .about{
-            display: flex;
-            flex-direction: column;
-            padding: 0;
-
-            .aboutText{
-                padding: 0;
-
-                p{
-                    font-size: 1.2rem;
-                    min-width: 100%;
-                    text-align: justify;
-                }
-
-                :nth-child(1){
-                    font-size: 1.6rem;
-                }
-            }
-            .skills{
-                div{
-                    svg, img{
-                        width: 2rem;
-                        height: 2rem;
-                    }
-                }
-            }
-        }
-
-        #carrousel{
-            position: relative;
-
-            #projects{
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                margin: 1rem 0;;
-            }
-
-            #slider{
-                gap: 1rem;
-                a{
-                    width: 100%;
-                }
-            }
-            #chevronLeft,
-            #chevronRight{
-                top: 4rem;
-                position: absolute;
-                height: 4rem;
-                width: 4rem;
-            }
-        }
-    }
-
     @media (max-width: 800px){
         padding: 6rem 0 4rem 0;
         
@@ -421,6 +311,116 @@ export const Container = styled.div`
                 margin: 1rem 0;;
             }
 
+            #chevronLeft,
+            #chevronRight{
+                top: 4rem;
+                position: absolute;
+                height: 4rem;
+                width: 4rem;
+            }
+        }
+    }
+
+    @media (max-width: 560px) {
+        padding: 6rem 0 4rem 0;
+        
+        main{
+            height: 40vh;
+            padding: 0 2rem;
+
+            .hello{
+                padding: 0;
+                p{
+                    font-size: 1.2rem;
+                }
+                span{
+                    font-size: 2rem; 
+                }
+                :nth-child(3){
+                    margin-left: 2rem;
+                }
+                :nth-child(4){
+                    font-size: 1.2rem;
+                }
+            }
+            .avatar{
+                justify-content: end;
+
+                span{
+                    width: 10rem;
+                    height: 10rem;
+
+                    svg{
+                        padding: .4rem;
+                    }
+    
+                    :nth-child(1){
+                        width: 3rem;
+                        height: 3rem;
+                        bottom: -1.4rem;
+                        left: 3rem;
+                    }
+                    :nth-child(2){
+                        right: -.4rem;
+                        bottom: 1rem;
+                        width: 2.5rem;
+                        height: 2.5rem;
+                    }
+                    :nth-child(3){
+                        padding: .4rem;
+                        width: 3rem;
+                        top: -.4rem;
+                        left: 6rem;
+                    }
+                }
+
+            }
+        }  
+        
+        .about{
+            display: flex;
+            flex-direction: column;
+            padding: 0 2rem;
+
+            .aboutText{
+                padding: 0;
+
+                p{
+                    font-size: 1.2rem;
+                    min-width: 100%;
+                    text-align: justify;
+                }
+
+                :nth-child(1){
+                    font-size: 1.6rem;
+                }
+            }
+            .skills{
+                div{
+                    svg, img{
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+            }
+        }
+
+        #carrousel{
+            position: relative;
+
+            #projects{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin: 1rem 0;;
+            }
+
+            #slider{
+                gap: 1rem;
+                a{
+                    width: 100%;
+                }
+            }
             #chevronLeft,
             #chevronRight{
                 top: 4rem;
