@@ -85,9 +85,35 @@ export const Container = styled.div`
         
     } 
 
-    @media (max-width: 1260px) {
+    @media (max-width: 800px) {
         padding: 1rem 2rem;
         max-width: 100%;
+
+        P{
+            font-size: 1rem;
+        }
+
+        #navbar{
+            display: none;
+        }
+
+        .contacts{
+            gap: 1rem;
+            
+            a{
+                gap: .2rem;
+                font-size: 1rem;
+                font-weight: 400;
+
+                svg{
+                    width: 1rem;
+                }
+            }            
+        } 
+    }
+    @media (max-width: 375px) {
+        flex-direction: column;
+        gap: .4rem;
 
         P{
             font-size: 1rem;

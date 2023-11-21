@@ -218,11 +218,114 @@ export const Container = styled.div`
         }
     }
 
+    @media (max-width: 1070px){
+        padding: 6rem 0 4rem 0;
+        
+        main{
+            height: 80vh;
+            padding-left: 4rem;
+
+            .hello{
+                padding: 0;
+                p{
+                    font-size: 1.4rem;
+                }
+                span{
+                    font-size: 3rem; 
+                }
+                :nth-child(3){
+                    margin-left: 4rem;
+                }
+                :nth-child(4){
+                    font-size: 1.8rem;
+                }
+            }
+            .avatar{
+                justify-content: end;
+
+                span{
+                    width: 20rem;
+                    height: 20rem;
+
+                    svg{
+                        padding: .8rem;
+                    }
+    
+                    :nth-child(1){
+                        width: 4rem;
+                        height: 4rem;
+                        bottom: 1rem;
+                        left: 1rem;
+                    }
+                    :nth-child(2){
+                        right: -1.8rem;
+                        width: 3.5rem;
+                        height: 3.5rem;
+                    }
+                    :nth-child(3){
+                        padding: .8rem;
+                        width: 4rem;
+                        left: 1rem;
+                        top: 1rem;;
+                    }
+                }
+
+            }
+        }  
+        
+        .about{
+            display: flex;
+            flex-direction: column;
+            padding: 4rem 4rem;
+
+            .aboutText{
+                padding: 0;
+
+                p{
+                    font-size: 1.4rem;
+                    min-width: 100%;
+                    text-align: justify;
+                }
+
+                :nth-child(1){
+                    font-size: 1.6rem;
+                }
+            }
+            .skills{
+                div{
+                    svg, img{
+                        width: 4rem;
+                        height: 4rem;
+                    }
+                }
+            }
+        }
+
+        #carrousel{
+            position: relative;
+
+            #projects{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin: 1rem 0;;
+            }
+
+            #chevronLeft,
+            #chevronRight{
+                top: 4rem;
+                position: absolute;
+                height: 4rem;
+                width: 4rem;
+            }
+        }
+    }
+
     @media (max-width: 800px){
         padding: 6rem 0 4rem 0;
         
         main{
-            height: 60vh;
+            height: 80vh;
             padding-left: 2rem;
 
             .hello{
@@ -231,7 +334,7 @@ export const Container = styled.div`
                     font-size: 1.2rem;
                 }
                 span{
-                    font-size: 4rem; 
+                    font-size: 3rem; 
                 }
                 :nth-child(3){
                     margin-left: 3rem;
@@ -325,7 +428,7 @@ export const Container = styled.div`
         padding: 6rem 0 4rem 0;
         
         main{
-            height: 40vh;
+            height: 70vh;
             padding: 0 2rem;
 
             .hello{
@@ -380,7 +483,108 @@ export const Container = styled.div`
         .about{
             display: flex;
             flex-direction: column;
+            padding: 4rem 2rem;
+
+            .aboutText{
+                padding: 0;
+
+                p{
+                    font-size: 1.2rem;
+                    min-width: 100%;
+                    text-align: justify;
+                }
+
+                :nth-child(1){
+                    font-size: 1.6rem;
+                }
+            }
+            .skills{
+                div{
+                    svg, img{
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+            }
+        }
+
+        #carrousel{
+            position: relative;
+
+            #projects{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin: 1rem 0;;
+            }
+
+            #slider{
+                gap: 1rem;
+                a{
+                    width: 100%;
+                }
+            }
+            #chevronLeft,
+            #chevronRight{
+                top: 4rem;
+                position: absolute;
+                height: 4rem;
+                width: 4rem;
+            }
+        }
+    }
+    @media (max-width: 375px) {
+        padding: 6rem 0 4rem 0;
+        
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 70vh;
             padding: 0 2rem;
+
+            .hello{
+                padding: 0;
+            }
+            .avatar{
+                justify-content: end;
+
+                span{
+                    width: 10rem;
+                    height: 10rem;
+
+                    svg{
+                        padding: .4rem;
+                    }
+    
+                    :nth-child(1){
+                        width: 3rem;
+                        height: 3rem;
+                        bottom: -1.4rem;
+                        left: 3rem;
+                    }
+                    :nth-child(2){
+                        right: -.4rem;
+                        bottom: 1rem;
+                        width: 2.5rem;
+                        height: 2.5rem;
+                    }
+                    :nth-child(3){
+                        padding: .4rem;
+                        width: 3rem;
+                        top: -.4rem;
+                        left: 6rem;
+                    }
+                }
+
+            }
+        }  
+        
+        .about{
+            display: flex;
+            flex-direction: column;
+            padding: 4rem 2rem;
 
             .aboutText{
                 padding: 0;
