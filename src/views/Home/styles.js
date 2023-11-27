@@ -424,7 +424,7 @@ export const Container = styled.div`
         }
     }
 
-    @media (max-width: 560px) {
+    /* @media (max-width: 560px) {
         padding: 6rem 0 4rem 0;
         
         main{
@@ -532,8 +532,9 @@ export const Container = styled.div`
                 width: 4rem;
             }
         }
-    }
-    @media (max-width: 375px) {
+    } */
+    /* @media (max-width: 375px) { */
+    @media (max-width: 560px) {
         padding: 6rem 0 4rem 0;
         
         main{
@@ -546,9 +547,22 @@ export const Container = styled.div`
 
             .hello{
                 padding: 0;
+                align-items: center;
+                
+                p{
+                    font-size: 1.6rem;
+                }
+                span{
+                    font-size: 2.6rem;
+                }
+                :nth-child(4){
+                    font-size: 1.8rem;
+                    text-align: center;
+                }
             }
             .avatar{
                 justify-content: end;
+                flex: 1;
 
                 span{
                     width: 10rem;
@@ -600,6 +614,7 @@ export const Container = styled.div`
                 }
             }
             .skills{
+                padding: 1.6rem;
                 div{
                     svg, img{
                         width: 2rem;
